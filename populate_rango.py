@@ -53,13 +53,10 @@ def populate():
 			"Other Frameworks": {"likes": 16, "pages": other_pages, "views": 32}
 			}
 
-
 	"""The code below goes through the cats dictionary, then adds each category,and then adds all the associated 
 	pages for that category. If you are using Python 2.x then use cats.iteritems() see 
 	http://docs.quantifiedcode.com/python-anti-patterns/readability/ for more information about how to iterate 
 	over a dictionary properly."""
-
-	
 
 
 	for cat, cat_data in cats.items():
@@ -86,11 +83,7 @@ def add_page(cat, title, url, views = 0):
 			print("- {0} - {1}".format(str(c), str(p)))
 
 
-
-def add_cat(name, likes, views):
-
 	c = Category.objects.get_or_create(name = name)[0]
-
 
 	c.views = views
 	c.likes = likes
