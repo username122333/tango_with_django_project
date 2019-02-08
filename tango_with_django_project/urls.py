@@ -6,7 +6,12 @@ from rango import views
 from django.conf import settings
 from django.conf.urls.static import static
 =======
+<<<<<<< HEAD
+from django.conf import settings
+from django.conf.urls.static import static
+=======
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -15,7 +20,12 @@ urlpatterns = [
     url(r'^rango/', include('rango.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 =======
+<<<<<<< HEAD
+    url(r'^rango/', include('rango.urls')),
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+=======
     url(r'^rango/', include('rango.urls'))
 ]
 
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58

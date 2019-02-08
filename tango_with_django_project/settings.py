@@ -19,8 +19,14 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 =======
+<<<<<<< HEAD
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+=======
 
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -46,7 +52,11 @@ INSTALLED_APPS = [
 <<<<<<< HEAD
     'rango'
 =======
+<<<<<<< HEAD
+    'rango'
+=======
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
 ]
 
 MIDDLEWARE = [
@@ -67,8 +77,12 @@ TEMPLATES = [
 <<<<<<< HEAD
         'DIRS': [TEMPLATE_DIR],
 =======
+<<<<<<< HEAD
+        'DIRS': [TEMPLATE_DIR],
+=======
         'DIRS': [],
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,7 +93,11 @@ TEMPLATES = [
 <<<<<<< HEAD
                 'django.template.context_processors.media'
 =======
+<<<<<<< HEAD
+                'django.template.context_processors.media'
+=======
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
             ],
         },
     },
@@ -137,11 +155,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
 STATICFILES_DIRS = [STATIC_DIR]
 #Media
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
