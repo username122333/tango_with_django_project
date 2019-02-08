@@ -24,9 +24,15 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 =======
+<<<<<<< HEAD
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+=======
 
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
 >>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -55,8 +61,12 @@ INSTALLED_APPS = [
 <<<<<<< HEAD
     'rango'
 =======
+<<<<<<< HEAD
+    'rango'
+=======
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
 >>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
 ]
 
 MIDDLEWARE = [
@@ -80,9 +90,13 @@ TEMPLATES = [
 <<<<<<< HEAD
         'DIRS': [TEMPLATE_DIR],
 =======
+<<<<<<< HEAD
+        'DIRS': [TEMPLATE_DIR],
+=======
         'DIRS': [],
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
 >>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -96,8 +110,12 @@ TEMPLATES = [
 <<<<<<< HEAD
                 'django.template.context_processors.media'
 =======
+<<<<<<< HEAD
+                'django.template.context_processors.media'
+=======
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
 >>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
             ],
         },
     },
@@ -157,7 +175,10 @@ STATIC_URL = '/static/'
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
 STATICFILES_DIRS = [STATIC_DIR]
 #Media
 
@@ -166,6 +187,9 @@ MEDIA_URL = '/media/'
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
 >>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
