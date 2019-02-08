@@ -1,6 +1,7 @@
 from django.db import models
 <<<<<<< HEAD
 from django.template.defaultfilters import slugify
+from django.contrib.auth.models import User
 
 =======
 <<<<<<< HEAD
@@ -46,6 +47,17 @@ class Page(models.Model):
 	def __str__(self):
 <<<<<<< HEAD
 		return self.title
+
+class UserProfile(models.Model):
+	user = models.OneToOneField(User)
+	website = models.URLField(blank = True)
+	picture = models.ImageField(upload_to = 'profile_images', blank = True)
+
+	def __str__(self):
+		return self.user.username
+=======
+<<<<<<< HEAD
+		return self.title
 =======
 		return self.title
 <<<<<<< HEAD
@@ -54,3 +66,4 @@ class Page(models.Model):
 >>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
 >>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
 >>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
+>>>>>>> 6cd5a7f59521d6297bc6f83b54f5cae1641ffb1b
