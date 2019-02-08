@@ -3,6 +3,9 @@ from django.contrib import admin
 from rango.models import Category, Page, UserProfile
 =======
 <<<<<<< HEAD
+from rango.models import Category, Page, UserProfile
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -11,6 +14,7 @@ from rango.models import Category, Page, UserProfile
 >>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 from rango.models import Category, Page
 >>>>>>> 6cd5a7f59521d6297bc6f83b54f5cae1641ffb1b
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 
 class PageAdmin(admin.ModelAdmin):
 	list_display = ('title', 'category', 'url')
@@ -29,6 +33,10 @@ admin.site.register(UserProfile)
 =======
 <<<<<<< HEAD
 admin.site.register(Page, PageAdmin)
+admin.site.register(UserProfile)
+=======
+<<<<<<< HEAD
+admin.site.register(Page, PageAdmin)
 =======
 admin.site.register(Page, PageAdmin)
 =======
@@ -41,3 +49,4 @@ admin.site.register(Page, PageAdmin)
 
 >>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 >>>>>>> 6cd5a7f59521d6297bc6f83b54f5cae1641ffb1b
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b

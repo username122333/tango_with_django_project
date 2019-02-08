@@ -56,4 +56,24 @@ class UserProfileForm(forms.ModelForm):
 
 =======
 		exclude = ('category',)
+<<<<<<< HEAD
+
+
+class UserForm(forms.ModelForm):
+	password = forms.CharField(widget = forms.PasswordInput())
+
+	class Meta:
+		model = User
+		fields = ('username', 'email', 'password')
+
+
+class UserProfileForm(forms.ModelForm):
+	class Meta:
+		model = UserProfile
+		fields = ('website', 'picture')
+
+
+
+=======
 >>>>>>> 6cd5a7f59521d6297bc6f83b54f5cae1641ffb1b
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b

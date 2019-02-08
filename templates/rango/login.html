@@ -9,6 +9,14 @@
 	<h1>Login to Rango</h1>
 	<form id = "login_form" method="post" action="{% url 'rango:login' %}">
 		{% csrf_token %}
+<<<<<<< HEAD
+		
+		Username: <input type = "text" name = "username" value = "" size = "50" />
+		<br />
+		Password: <input type = "password" name = "password" value = "" size = "50" />
+		<br />
+		<input type = "submit" value = "submit" />
+=======
 		<!-- Space -->
 		Username: <input type="text" name="username" value="" size="50" />
 		<br />
@@ -16,6 +24,7 @@
 		<br />
 		<!-- Space -->
 		<input type="submit" value="submit" />
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 	</form>
 	{% if wronguser %}
 		Invalid login details supplied.

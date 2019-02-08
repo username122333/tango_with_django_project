@@ -46,6 +46,9 @@ class Page(models.Model):
 
 	def __str__(self):
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 		return self.title
 
 class UserProfile(models.Model):
@@ -54,6 +57,9 @@ class UserProfile(models.Model):
 	picture = models.ImageField(upload_to = 'profile_images', blank = True)
 
 	def __str__(self):
+<<<<<<< HEAD
+		return self.user.username
+=======
 		return self.user.username
 =======
 <<<<<<< HEAD
@@ -67,3 +73,4 @@ class UserProfile(models.Model):
 >>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
 >>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 >>>>>>> 6cd5a7f59521d6297bc6f83b54f5cae1641ffb1b
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b

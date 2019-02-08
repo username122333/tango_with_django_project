@@ -4,10 +4,16 @@ from django.shortcuts import render
 from rango.models import Category
 from rango.models import Page
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 from rango.forms import CategoryForm, PageForm, UserForm, UserProfileForm
 from django.core.urlresolvers import reverse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+<<<<<<< HEAD
+from datetime import datetime
+=======
 =======
 from rango.forms import CategoryForm, PageForm
 from django.urls import reverse
@@ -19,18 +25,24 @@ from rango.models import Category
 from rango.models import Page
 >>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 >>>>>>> 6cd5a7f59521d6297bc6f83b54f5cae1641ffb1b
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 
 def index(request):
 	category_list = Category.objects.order_by('-likes')[:5]
 	page_list = Page.objects.order_by('-views')[:5]
 	context_dict = {'categories': category_list, 'pages': page_list}
 
-	# Render the response and send it back
-	return render(request, 'rango/index.html', context_dict)
+	visitor_cookie_handler(request)
+	context_dict['visits'] = request.session['visits']
+	response = render(request, 'rango/index.html', context_dict)
+
+	return response
+
 
 
 def about(request):
-	return render(request, 'rango/about.html')
+	return render(request, 'rango/about.html', {"visits": request.session['visits']})
+
 
 
 def show_category(request, category_name_slug):
@@ -87,6 +99,9 @@ def add_page(request, category_name_slug):
 
 	return render(request, 'rango/add_page.html', context_dict)
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 
 
 def register(request):
@@ -127,7 +142,11 @@ def user_login(request):
 		if user:
 			if user.is_active:
 				login(request, user)
+<<<<<<< HEAD
+				return HttpResponseRedirect(reverse('rango:index'))
+=======
 				return HttpResponseRedirect(reverse('index'))
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 			else:
 				return HttpResponse("Your Rango account is disabled.")
 		else:
@@ -140,10 +159,43 @@ def user_login(request):
 def restricted(request):
 	return render(request, 'rango/restricted.html')
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
 @login_required
 def user_logout(request):
 	logout(request)
 	return HttpResponseRedirect(reverse('rango:index'))
+<<<<<<< HEAD
+
+
+def visitor_cookie_handler(request):
+	visits = int(request.COOKIES.get('visits', '1'))
+	last_visit_cookie = request.COOKIES.get('last_visit', str(datetime.now()))
+	last_visit_time = datetime.strptime(last_visit_cookie[:-7], '%Y-%m-%d %H:%M:%S')
+
+	if (datetime.now() - last_visit_time).days > 0:
+		visits += 1
+		request.session['last_visit'] = str(datetime.now())
+	else:
+		request.session['last_visit'] = last_visit_cookie
+
+	request.session['visits'] = visits
+
+
+def get_server_side_cookie(request, cookie, default_val = None):
+	val = request.session.get(cookie)
+	if not val:
+		val = default_val
+	return val
+
+
+
+
+
+
+=======
 =======
 =======
 =======
@@ -176,3 +228,4 @@ def about(request):
 >>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
 >>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 >>>>>>> 6cd5a7f59521d6297bc6f83b54f5cae1641ffb1b
+>>>>>>> 23b13ac84ac2803559a2fcb97ee688a7d443278b
