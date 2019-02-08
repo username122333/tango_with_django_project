@@ -11,12 +11,11 @@
 	<body>
 		<h1>This tutorial has been put together by Gaia Argiolas</h1>
 		<div>
-			<a href = "/rango/">Index</a><br />
-			<img src="{% static "images/dog.jpg" %}" alt = "Picture of a dog" />
+			<a href = "{% url 'rango:index' %}">Index</a><br />
+			<img src = "{% static "images/dog.jpg" %}" alt = "Picture of a dog" />
 		</div>
 		<div>
-			<img src="{{ MEDIA_URL }}cat.jpg" alt = "Picture of a cat" />
+			<img src = "{{ MEDIA_URL }} cat.jpg" alt = "Picture of a cat" />
 		</div>
 	</body>
-</html
-
+</html>
