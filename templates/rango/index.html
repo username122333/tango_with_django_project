@@ -1,17 +1,14 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
 
-{% load staticfiles%}
-
-<html>
-
-	<head>
-		<title>Rango</title>
-	</head>
-
-	<body>
-		<h1>Rango says...</h1>
+{% block body_block %}
+	<h1>Rango says...</h1>
 		<div>
 			hey there partner! <br />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 		</div>
 		<div>
 			<h2>Most Liked Categories</h2>
@@ -45,9 +42,24 @@
 				<strong>There are no pages present.</strong>
 			{% endif %}
 		</div>
+<<<<<<< HEAD
+{% endblock %}
+=======
 		<div>
 			<a href = "{% url 'rango:about' %}">About Rango</a><br />
+<<<<<<< HEAD
 			<a href = "{% url 'rango:add_category' %}">Add a New Category</a><br />
+=======
+			<img src = "{% static "images/rango.jpg" %}" alt = "Picture of Rango" />
+=======
+			<strong>{{ boldmessage }}</strong> <br />
+		</div>
+		<div>
+			<a href = "/rango/about/">About</a><br />
+			<img src="{% static "images/rango.jpg" %}" alt = "Picture of Rango" />
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 		</div>
 	</body>
 </html>
+>>>>>>> 0ef760c50f9d21957abeb71b3ca78078f90cad39

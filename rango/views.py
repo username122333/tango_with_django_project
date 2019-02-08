@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from rango.models import Category
 from rango.models import Page
 from rango.forms import CategoryForm, PageForm
 from django.urls import reverse
+=======
+from django.http import HttpResponse
+<<<<<<< HEAD
+from django.shortcuts import render
+from rango.models import Category
+from rango.models import Page
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 
 def index(request):
 	category_list = Category.objects.order_by('-likes')[:5]
@@ -30,6 +38,7 @@ def show_category(request, category_name_slug):
 		context_dict['pages'] = None
 
 	return render(request, 'rango/category.html', context_dict)
+<<<<<<< HEAD
 
 def add_category(request):
 	form = CategoryForm()
@@ -66,3 +75,33 @@ def add_page(request, category_name_slug):
 	context_dict = {'form':form, 'category': category}
 
 	return render(request, 'rango/add_page.html', context_dict)
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+from django.shortcuts import render
+
+def index(request):
+	
+	context_dict = {'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"}
+
+	
+	return render(request, 'rango/index.html', context = context_dict)
+
+def about(request):
+	return render(request, 'rango/about.html')
+<<<<<<< HEAD
+=======
+=======
+
+def index(request):
+	return HttpResponse("Rango says hey there partner! <br> <a href = '/rango/about/'>About</a>")
+
+def about(request):
+	return HttpResponse("Rango says here is the about page. <br> <a href = '/rango/'>Index</a>")
+>>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532

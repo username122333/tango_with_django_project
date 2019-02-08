@@ -14,9 +14,31 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+<<<<<<< HEAD
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+=======
+<<<<<<< HEAD
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+=======
+<<<<<<< HEAD
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+=======
+<<<<<<< HEAD
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+=======
+
+>>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -39,7 +61,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'rango'
+=======
+<<<<<<< HEAD
+    'rango'
+=======
+<<<<<<< HEAD
+    'rango'
+=======
+<<<<<<< HEAD
+    'rango'
+=======
+>>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 ]
 
 MIDDLEWARE = [
@@ -57,7 +94,23 @@ ROOT_URLCONF = 'tango_with_django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [TEMPLATE_DIR],
+=======
+<<<<<<< HEAD
+        'DIRS': [TEMPLATE_DIR],
+=======
+<<<<<<< HEAD
+        'DIRS': [TEMPLATE_DIR],
+=======
+<<<<<<< HEAD
+        'DIRS': [TEMPLATE_DIR],
+=======
+        'DIRS': [],
+>>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -65,7 +118,22 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+<<<<<<< HEAD
                 'django.template.context_processors.media'
+=======
+<<<<<<< HEAD
+                'django.template.context_processors.media'
+=======
+<<<<<<< HEAD
+                'django.template.context_processors.media'
+=======
+<<<<<<< HEAD
+                'django.template.context_processors.media'
+=======
+>>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
             ],
         },
     },
@@ -122,9 +190,30 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
 STATICFILES_DIRS = [STATIC_DIR]
 #Media
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5713a1011b5570c6fd8750eec798d7ed32f38915
+>>>>>>> e46c979f77ed0b63845697c217b74efa8cb41d58
+>>>>>>> 9f3c297ec1bdf5b3f9157c8cdc599651ab02d731
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532

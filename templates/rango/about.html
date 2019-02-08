@@ -1,21 +1,37 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles%}
 
-<html>
+{% block title_block %}
+	About
+{% endblock %}
 
-	<head>
-		<title>Rango</title>
-	</head>
-
-	<body>
-		<h1>This tutorial has been put together by Gaia Argiolas</h1>
+{% block body_block %}
+	<h1>This tutorial has been put together by Gaia Argiolas</h1>
 		<div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 			<a href = "{% url 'rango:index' %}">Index</a><br />
+>>>>>>> 0ef760c50f9d21957abeb71b3ca78078f90cad39
 			<img src = "{% static "images/dog.jpg" %}" alt = "Picture of a dog" />
 		</div>
 		<div>
-			<img src = "{{ MEDIA_URL }} cat.jpg" alt = "Picture of a cat" />
+			<img src = "{{ MEDIA_URL }}cat.jpg" alt = "Picture of a cat" />
 		</div>
+<<<<<<< HEAD
+{% endblock %}
+=======
 	</body>
 </html>
+=======
+			<a href = "/rango/">Index</a><br />
+			<img src="{% static "images/dog.jpg" %}" alt = "Picture of a dog" />
+		</div>
+		<div>
+			<img src="{{ MEDIA_URL }}cat.jpg" alt = "Picture of a cat" />
+		</div>
+	</body>
+</html
+
+>>>>>>> d6767caf436c41502a09cd44ab9c469910f77532
+>>>>>>> 0ef760c50f9d21957abeb71b3ca78078f90cad39
