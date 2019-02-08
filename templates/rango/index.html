@@ -4,6 +4,7 @@
 {% block body_block %}
 	<h1>Rango says...</h1>
 
+
 	{% if user.is_authenticated %}
 		howdy {{ user.username }}!
 	{% else %}
@@ -40,5 +41,9 @@
 		{% else %}
 			<strong>There are no pages present.</strong>
 		{% endif %}
+	</div>
+
+	<div>
+		Your visits: {{ visits }}
 	</div>
 {% endblock %}

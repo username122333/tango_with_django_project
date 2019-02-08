@@ -57,3 +57,9 @@ class UserProfileForm(forms.ModelForm):
 
 		exclude = ('category',)
 
+
+
+
+
+
+
