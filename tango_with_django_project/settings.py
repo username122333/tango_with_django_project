@@ -19,6 +19,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 
 
@@ -45,7 +48,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rango'
-
 
 ]
 
@@ -139,5 +141,4 @@ STATICFILES_DIRS = [STATIC_DIR]
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
-
 
